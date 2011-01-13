@@ -1,0 +1,60 @@
+/* --- Layout --- */
+
+html{
+  overflow-y: scroll;
+}
+
+
+body{
+  background-color: #fff;
+  color: #333;
+}
+
+#container {
+  width:950px;
+  margin:0 auto;
+}
+
+#header{
+  height: 150px;
+  padding: 20px;
+  
+}
+
+
+#top-nav li{
+  display: inline;
+  padding-right: 20px;
+}
+
+#main{
+
+}
+
+#left-nav{
+  float: left;
+  display: inline;
+  width: 200px;
+}
+#left-nav li{
+  list-style: none;
+}
+
+#right-nav{
+  float: right;
+  display: inline;
+  width; 200px;
+}
+
+#content{
+  float: left;
+}
+#footer{
+  clear: both;
+  height: 200px;
+}
+/* ---- Styles ------ */
+.clear{
+  clear: both;
+}
+
