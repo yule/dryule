@@ -11,7 +11,7 @@ gem 'rails', '3.0.3'
 # gem 'unicorn'
 gem 'pg'
 gem 'template'
-
+gem 'mongrel'
 # Deploy with Capistrano
 # gem 'capistrano'
 
