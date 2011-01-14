@@ -11,6 +11,10 @@ body{
   color: #424242;
 }
 
+a, a:visited{
+  color: #666666;
+}
+
 #container {
   width:950px;
   margin:0 auto;
