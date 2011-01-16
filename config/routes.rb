@@ -9,7 +9,7 @@ DryuleCom::Application.routes.draw do
 
   match 'about-me' => 'about_me#index'
   match 'sport' => 'sport#index'
-  match 'poker' => 'poker#index'
+  match 'beer' => 'beer#index'
   match 'work' => 'work#index'
   
   # Sample of regular route:

@@ -1,1 +1,3 @@
-1295036744
+1295194319
+BeerController	/home/paul/work/websites/dryule.com/app/controllers/beer_controller.rb	class BeerController 
+index	/home/paul/work/websites/dryule.com/app/controllers/beer_controller.rb	  def index
