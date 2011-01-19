@@ -4,7 +4,7 @@ DryuleCom::Application.routes.draw do
 
   resources :beverages
 
-  root :to => "welcome#index"
+  root :to => "about_me#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
