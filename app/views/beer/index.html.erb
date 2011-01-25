@@ -8,6 +8,7 @@
     <td><strong>Beer</strong></td>
     <td><strong>Comment</strong></td>
     <td><strong>Score (/100)</strong></td>
+    <td><strong>Added by</strong></td>
   </tr>
 </thead>
 <% @beers.each do |beer| %>
@@ -15,6 +16,7 @@
   <td><strong><%= beer.name %> </strong></td>
   <td><%= beer.comment %></td>
   <td><%= beer.score %> / 100</td>  
+  <td><%= beer.user.login if beer.user %></td>
 </tr>
 <% end %>
 </table>

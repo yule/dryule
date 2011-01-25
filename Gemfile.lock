@@ -29,6 +29,8 @@ GEM
       activesupport (= 3.0.3)
     activesupport (3.0.3)
     arel (2.0.6)
+    authlogic (2.1.6)
+      activesupport
     builder (2.1.2)
     cgi_multipart_eof_fix (2.5.0)
     daemons (1.1.0)
@@ -79,6 +81,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  authlogic
   mongrel
   pg
   rails (= 3.0.3)
