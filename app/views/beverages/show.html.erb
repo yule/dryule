@@ -1,1 +1,32 @@
 <p id="notice"><%= notice %></p>
+
+<h2><%= @beverage.name %></h2>
+
+<div class="scores-table">
+<div class="comment">
+<p><%= @beverage.comment %></p>
+</div>
+<div class="added-by">
+<p><%= @beverage.user.login if @beverage.user %></p>
+</div>
+<div class="score">
+  <p><%= @beverage.score%></p>
+</div>
+
+<% for comment in @beverage.comments %>
+<div class="comment">
+<p><%= comment.comment %></p>
+</div>
+<div class="added-by">
+<p><%= comment.user.login if comment.user %></p>
+</div>
+<div class="score">
+  <p><%= comment.score%></p>
+</div>
+<% end %>
+</div>
+
+<div class="comment-form">
+<h3>Add a review</h3>
+<%= render :partial=>'/comments/form'%>
+</div>

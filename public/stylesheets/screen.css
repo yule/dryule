@@ -105,6 +105,25 @@ a, a:visited{
   
 }
 
+.comment{
+  width: 700px;
+  float: left;
+}
+.added-by{
+  float: left;
+  width: 100px;
+}
+.score{
+  float: left;
+}
+
+.scores-table{
+  width: 100%;
+}
+.comment-form{
+  clear: left;
+  width: 100%;
+}
 #footer{
   clear: both;
   height: 200px;

@@ -13,10 +13,15 @@
 </thead>
 <% @beers.each do |beer| %>
 <tr>
-  <td><strong><%= beer.name %> </strong></td>
+  <td><strong><%= link_to beer.name, beer %> </strong></td>
   <td><%= beer.comment %></td>
   <td><%= beer.score %> / 100</td>  
   <td><%= beer.user.login if beer.user %></td>
 </tr>
 <% end %>
 </table>
+
+<br/><br/><br/>
+<% if current_user %>
+  <%= link_to 'Add a beer', '/beverages/new' %>
+<% end%>

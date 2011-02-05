@@ -1,7 +1,7 @@
 class BeveragesController < ApplicationController
   # GET /beverages
   # GET /beverages.xml
-  before_filter :require_user
+  before_filter :require_user, :except=>:show
   
   def index
     @beverages = Beverage.all
@@ -27,6 +27,11 @@ class BeveragesController < ApplicationController
     @beverage = Beverage.find(params[:id])
   end
 
+  def show
+    @beverage = Beverage.find(params[:id])
+    @comment = Comment.new
+  end
+  
   # POST /beverages
   # POST /beverages.xml
   def create

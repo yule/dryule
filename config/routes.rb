@@ -2,6 +2,8 @@ DryuleCom::Application.routes.draw do
 
   
 
+  resources :comments
+
   resources :beverages, :user_sessions
   
   root :to => "about_me#index"
