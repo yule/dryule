@@ -2,6 +2,8 @@ DryuleCom::Application.routes.draw do
 
   
 
+  resources :posts
+
   resources :comments
 
   resources :beverages, :user_sessions
