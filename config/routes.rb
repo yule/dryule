@@ -2,7 +2,7 @@ DryuleCom::Application.routes.draw do
 
   
 
-  get "blog/index"
+  
 
   resources :posts
 
@@ -16,7 +16,7 @@ DryuleCom::Application.routes.draw do
   # first created -> highest priority.
 
   match 'about-me' => 'about_me#index'
-  match 'sport' => 'sport#index'
+  match 'blog' => 'blog#index'
   match 'beer' => 'beer#index'
   match 'work' => 'work#index'
   

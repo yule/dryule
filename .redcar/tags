@@ -1,4 +1,4 @@
-1299330570
+1299331422
 AboutMeController	/home/paul/work/websites/dryule.com/app/controllers/about_me_controller.rb	class AboutMeController 
 AboutMeControllerTest	/home/paul/work/websites/dryule.com/test/functional/about_me_controller_test.rb	class AboutMeControllerTest 
 AboutMeHelper	/home/paul/work/websites/dryule.com/app/helpers/about_me_helper.rb	module AboutMeHelper
@@ -21,7 +21,9 @@ BlogHelperTest	/home/paul/work/websites/dryule.com/test/unit/helpers/blog_helper
 BrowsingTest	/home/paul/work/websites/dryule.com/test/performance/browsing_test.rb	class BrowsingTest 
 Comment	/home/paul/work/websites/dryule.com/app/models/comment.rb	class Comment 
 CommentTest	/home/paul/work/websites/dryule.com/test/unit/comment_test.rb	class CommentTest 
+CommentsController	/home/paul/work/websites/dryule.com/app/controllers/comments_controller.rb	class CommentsController 
 CommentsControllerTest	/home/paul/work/websites/dryule.com/test/functional/comments_controller_test.rb	class CommentsControllerTest 
+CommentsHelper	/home/paul/work/websites/dryule.com/app/helpers/comments_helper.rb	module CommentsHelper
 CommentsHelperTest	/home/paul/work/websites/dryule.com/test/unit/helpers/comments_helper_test.rb	class CommentsHelperTest 
 CreateBeverages	/home/paul/work/websites/dryule.com/db/migrate/20110119192150_create_beverages.rb	class CreateBeverages 
 CreateComments	/home/paul/work/websites/dryule.com/db/migrate/20110205112238_create_comments.rb	class CreateComments 
@@ -61,6 +63,7 @@ WorkHelperTest	/home/paul/work/websites/dryule.com/test/unit/helpers/work_helper
 a	/home/paul/work/websites/dryule.com/public/javascripts/jquery-1.4.2.min.js	function a(g){for(var h="",l,m=0;g[m];m++){l=g[m];if(l.nodeType===3||l.nodeType===4)h+=l.nodeValue;else if(l.nodeType!==8)h+=a(l.childNodes)}return h}function b(g,h,l,m,q,p){q=0;for(var v=m.length;q<v;q++)
 b	/home/paul/work/websites/dryule.com/public/javascripts/jquery-1.4.2.min.js	function b()
 create	/home/paul/work/websites/dryule.com/app/controllers/beverages_controller.rb	  def create
+create	/home/paul/work/websites/dryule.com/app/controllers/comments_controller.rb	  def create
 create	/home/paul/work/websites/dryule.com/app/controllers/user_sessions_controller.rb	  def create
 current_user	/home/paul/work/websites/dryule.com/app/controllers/application_controller.rb	def current_user
 current_user_session	/home/paul/work/websites/dryule.com/app/controllers/application_controller.rb	def current_user_session
@@ -90,6 +93,7 @@ k	/home/paul/work/websites/dryule.com/public/javascripts/jquery-1.4.2.min.js	fun
 ma	/home/paul/work/websites/dryule.com/public/javascripts/jquery-1.4.2.min.js	function ma(){if(!c.isReady){try{s.documentElement.doScroll("left")}catch(a){setTimeout(ma,1);return}c.ready()}}function Qa(a,b){b.src?c.ajax({url:b.src,async:false,dataType:"script"}):c.globalEval(b.text||b.textContent||b.innerHTML||"");b.parentNode&&b.parentNode.removeChild(b)}function X(a,b,d,f,e,j){var i=a.length;if(typeof b==="object"){for(var o in b)X(a,o,b[o],f,e,d);return a}if(d!==w){f=!j&&f&&c.isFunction(d);for(o=0;o<i;o++)e(a[o],b,f?d.call(a[o],o,e(a[o],b)):d,j)
 na	/home/paul/work/websites/dryule.com/public/javascripts/jquery-1.4.2.min.js	function na(a,b,d){d[0].type=a;return c.event.handle.apply(b,d)}function oa(a){var b,d=[],f=[],e=arguments,j,i,o,k,n,r;i=c.data(this,"events");if(!(a.liveFired===this||!i||!i.live||a.button&&a.type==="click")){a.liveFired=this;var u=i.live.slice(0);for(k=0;k<u.length;k++){i=u[k];i.origType.replace(O,"")===a.type?f.push(i.selector):u.splice(k--,1)}j=c(a.target).closest(f,a.currentTarget)
 new	/home/paul/work/websites/dryule.com/app/controllers/beverages_controller.rb	  def new
+new	/home/paul/work/websites/dryule.com/app/controllers/comments_controller.rb	  def new
 new	/home/paul/work/websites/dryule.com/app/controllers/user_sessions_controller.rb	def new
 pa	/home/paul/work/websites/dryule.com/public/javascripts/jquery-1.4.2.min.js	function pa(a,b){return"live."+(a&&a!=="*"?a+".":"")+b.replace(/\./g,"`")
 parse_content	/home/paul/work/websites/dryule.com/app/helpers/blog_helper.rb	  def parse_content(content)
