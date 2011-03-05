@@ -2,6 +2,8 @@ DryuleCom::Application.routes.draw do
 
   
 
+  get "blog/index"
+
   resources :posts
 
   resources :comments

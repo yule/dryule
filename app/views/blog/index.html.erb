@@ -1,0 +1,4 @@
+<% for item in @items %>
+<h2><%= item.title %></h2>
+<p><%= parse_content(item.content) %></p>
+<% end %>
