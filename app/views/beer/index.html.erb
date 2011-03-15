@@ -13,7 +13,7 @@
 </thead>
 <% @beers.each do |beer| %>
 <tr>
-  <td><strong><%= link_to beer.name, beer %> </strong></td>
+<td><strong><%= link_to beer.name, beer %> <%= '<span class="new">new</span>'.html_safe if beer.is_new?%></strong></td>
   <td><%= beer.comment %></td>
   <td><%= beer.score %> / 100</td>  
   <td><%= beer.user.login if beer.user %></td>

@@ -120,6 +120,12 @@ a, a:visited{
 .scores-table{
   width: 100%;
 }
+
+.new{
+  color: #770000;
+}
+  
+
 .comment-form{
   clear: left;
   width: 100%;

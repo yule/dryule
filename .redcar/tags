@@ -1,4 +1,4 @@
-1299331422
+1300225020
 AboutMeController	/home/paul/work/websites/dryule.com/app/controllers/about_me_controller.rb	class AboutMeController 
 AboutMeControllerTest	/home/paul/work/websites/dryule.com/test/functional/about_me_controller_test.rb	class AboutMeControllerTest 
 AboutMeHelper	/home/paul/work/websites/dryule.com/app/helpers/about_me_helper.rb	module AboutMeHelper
@@ -89,6 +89,7 @@ index	/home/paul/work/websites/dryule.com/app/controllers/blog_controller.rb	  d
 index	/home/paul/work/websites/dryule.com/app/controllers/sport_controller.rb	  def index
 index	/home/paul/work/websites/dryule.com/app/controllers/welcome_controller.rb	  def index
 index	/home/paul/work/websites/dryule.com/app/controllers/work_controller.rb	  def index
+is_new?	/home/paul/work/websites/dryule.com/app/models/beverage.rb	  def is_new?
 k	/home/paul/work/websites/dryule.com/public/javascripts/jquery-1.4.2.min.js	function k()
 ma	/home/paul/work/websites/dryule.com/public/javascripts/jquery-1.4.2.min.js	function ma(){if(!c.isReady){try{s.documentElement.doScroll("left")}catch(a){setTimeout(ma,1);return}c.ready()}}function Qa(a,b){b.src?c.ajax({url:b.src,async:false,dataType:"script"}):c.globalEval(b.text||b.textContent||b.innerHTML||"");b.parentNode&&b.parentNode.removeChild(b)}function X(a,b,d,f,e,j){var i=a.length;if(typeof b==="object"){for(var o in b)X(a,o,b[o],f,e,d);return a}if(d!==w){f=!j&&f&&c.isFunction(d);for(o=0;o<i;o++)e(a[o],b,f?d.call(a[o],o,e(a[o],b)):d,j)
 na	/home/paul/work/websites/dryule.com/public/javascripts/jquery-1.4.2.min.js	function na(a,b,d){d[0].type=a;return c.event.handle.apply(b,d)}function oa(a){var b,d=[],f=[],e=arguments,j,i,o,k,n,r;i=c.data(this,"events");if(!(a.liveFired===this||!i||!i.live||a.button&&a.type==="click")){a.liveFired=this;var u=i.live.slice(0);for(k=0;k<u.length;k++){i=u[k];i.origType.replace(O,"")===a.type?f.push(i.selector):u.splice(k--,1)}j=c(a.target).closest(f,a.currentTarget)
