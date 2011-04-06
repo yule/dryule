@@ -1,4 +1,5 @@
 <% for item in @items %>
-<h2><%= item.title %></h2>
+<h2><%= item.title %> </h2>
+<h3><%=item.published.strftime('%d %B %Y') %></h3>
 <p><%= parse_content(item.content) %></p>
 <% end %>

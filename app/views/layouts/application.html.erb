@@ -48,19 +48,21 @@
   
 </head>
 <body>
+  
+<div id="top-nav">
+        <ul>
+        <li <%= "class='active'" if controller_name == 'about_me' %>><%= link_to 'about me', '/about-me' %></li>
+        <li <%= "class='active'" if controller_name == 'beer' %>><%= link_to 'beer', '/beer' %></li>
+        <li <%= "class='active'" if controller_name == 'blog' %>><%= link_to 'blog', '/blog' %></li>
+        <li <%= "class='active'" if controller_name == 'work' %>><%= link_to 'work', '/work' %></li>
+          </ul>
+    </div>
 
 	<div id="container">
     <div id="header">
         <h1><em>drYule.</em></h1>
 		</div>
-    <div id="top-nav">
-        <ul>
-        <li <%= "class='active'" if controller_name == 'work' %>><%= link_to 'work', '/work' %></li>
-        <li <%= "class='active'" if controller_name == 'beer' %>><%= link_to 'beer', '/beer' %></li>
-        <li <%= "class='active'" if controller_name == 'blog' %>><%= link_to 'blog', '/blog' %></li>
-        <li <%= "class='active'" if controller_name == 'about_me' %>><%= link_to 'about me', '/about-me' %></li>
-          </ul>
-    </div>
+    
     <div class="clear"><!-- --></div>
 		<div id="main">	
       <div id="content">
