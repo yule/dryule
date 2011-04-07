@@ -1,0 +1,25 @@
+#game{
+  background-color: #887711;
+  height: 400px;
+}
+
+#board{
+  position: relative;
+  height: 300px;
+}
+
+#all-turn-holder{
+  position: absolute;
+  bottom: 0;
+}
+
+.turn{
+  position: relative;
+}
+
+.peg-holder{
+  width: 30px;
+  height: 30px;
+  background-color: #999999;
+}
+

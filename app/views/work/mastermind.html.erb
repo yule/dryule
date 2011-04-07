@@ -1,0 +1,40 @@
+<div id="game">
+  <div id="board">
+        <div id="result">
+          result
+          <!--will be populated when user guesses correctly -->
+        </div>
+    <div id="all-turn-holder">
+      <% number_of_goes = 15 %>
+      
+      <% number_of_goes.downto(1).each do |i| %>
+      <div id="<%= i %>" class="turn">
+        <div class="peg-holder">
+          <% (1..4).each do |j| %>
+            <div class="sm-circle-padder">
+              <div class="small-circle" id="sm-<%= j %>">
+                <!-- will be coloured by what guess is-->
+              </div>
+            </div>
+          <% end %>
+        </div>
+        
+        <div class="guess-holder">
+          <% (1..4).each do |k| %>
+            <div class="med-circle-padder">
+              <div class="med-circle" id="m-<%= k %>">
+                <!-- will be coloured by user guess-->
+              </div>
+            </div>
+          <% end %>
+        </div> <!-- end guess-holder -->
+        <div class="button-holder">
+          <div id="button-<%= i %>">
+              <!-- button to guess! -->
+          </div>
+        </div> <!-- end button holder -->
+      </div> <!-- end turn -->
+      <% end %>
+    </div>  <!-- end all-turn-holder -->  
+  </div> <!-- end board -->
+</div> <!-- end game -->

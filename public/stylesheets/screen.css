@@ -18,6 +18,7 @@ a, a:visited{
 #container {
   width:950px;
   margin:0 auto;
+  margin-left: 120px; /* force some room for floating tabs */
 }
 
 #header{

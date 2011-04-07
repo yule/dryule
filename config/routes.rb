@@ -20,6 +20,8 @@ DryuleCom::Application.routes.draw do
   match 'beer' => 'beer#index'
   match 'work' => 'work#index'
   
+  get 'work/mastermind'
+  
   match "login" => "user_sessions#new", :as =>:login
   match "logout" => "user_sessions#destroy", :as =>:logout
   # Sample of regular route:
