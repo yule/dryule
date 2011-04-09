@@ -1,40 +1,77 @@
+<div id="intro">
+  <h2><em>mastermind</em></h2>
+
+  <p>This is a game. It consists of 100 lines of ERB(+layout), 100 lines of JS and 100 lines of CSS</p>
+  <p>There are no images</p>
+          
+  
+  <h3>How to play</h3>
+  <p>Try and guess the colour sequence.</p>
+  <p>Click the circles on the right to change the colour, then click 'GO' to guess</p>
+  <p>
+    If you get the correct colour in the correct place, you will get a black peg.
+    If you get the correct colour in the wrong place, you will get a white peg.
+    The idea of the games is to get 4 black pegs
+  </p>
+  
+</div>
+
 <div id="game">
   <div id="board">
         <div id="result">
-          result
           <!--will be populated when user guesses correctly -->
         </div>
     <div id="all-turn-holder">
       <% number_of_goes = 15 %>
       
-      <% number_of_goes.downto(1).each do |i| %>
+      <% number_of_goes.downto(1).each do |i| -%>
+      
+      
       <div id="<%= i %>" class="turn">
         <div class="peg-holder">
           <% (1..4).each do |j| %>
             <div class="sm-circle-padder">
-              <div class="small-circle" id="sm-<%= j %>">
+              <div class="small-circle" id="sm-<%= i %>-<%= j %>">
                 <!-- will be coloured by what guess is-->
               </div>
             </div>
           <% end %>
         </div>
-        
+        <div class="spacer">
+          <!-- space it a little bit -->
+        </div>
         <div class="guess-holder">
           <% (1..4).each do |k| %>
             <div class="med-circle-padder">
-              <div class="med-circle" id="m-<%= k %>">
+              <div class="med-circle" id="m-<%= i %>-<%= k %>">
                 <!-- will be coloured by user guess-->
               </div>
             </div>
           <% end %>
-        </div> <!-- end guess-holder -->
-        <div class="button-holder">
-          <div id="button-<%= i %>">
-              <!-- button to guess! -->
-          </div>
-        </div> <!-- end button holder -->
+        </div> <!-- end guess-holder -->        
       </div> <!-- end turn -->
+      <div class="clear"><!-- clearer --></div>
       <% end %>
     </div>  <!-- end all-turn-holder -->  
+    <div id="guess">
+      <div class="main-guess-holder">
+          <% (1..4).each do |k| %>
+            <div class="large-circle-padder">
+              <div class="large-circle" id="l-<%= k %>">
+                <!-- will be coloured by user guess-->
+              </div>
+            </div>
+          <% end %>
+        </div>
+    </div>
+        <div id="go-button">
+          GO
+        </div>        
+        <div class="spacer"><!----></div>
+          <div id="new-game-button">
+            New game
+          </div>
+  
   </div> <!-- end board -->
 </div> <!-- end game -->
+<div class="clear"><!----></div>
