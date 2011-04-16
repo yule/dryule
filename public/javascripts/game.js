@@ -63,7 +63,6 @@ $(document).ready(function(){
   });
 });
 
-
 function new_game(){
   $('.turn').hide();
   $('.large-circle').css('background-color','#ffffff');
