@@ -1,4 +1,4 @@
-1302372547
+1303465588
 AboutMeController	/home/paul/work/websites/dryule.com/app/controllers/about_me_controller.rb	class AboutMeController 
 AboutMeControllerTest	/home/paul/work/websites/dryule.com/test/functional/about_me_controller_test.rb	class AboutMeControllerTest 
 AboutMeHelper	/home/paul/work/websites/dryule.com/app/helpers/about_me_helper.rb	module AboutMeHelper
@@ -27,10 +27,12 @@ CommentsHelper	/home/paul/work/websites/dryule.com/app/helpers/comments_helper.r
 CommentsHelperTest	/home/paul/work/websites/dryule.com/test/unit/helpers/comments_helper_test.rb	class CommentsHelperTest 
 CreateBeverages	/home/paul/work/websites/dryule.com/db/migrate/20110119192150_create_beverages.rb	class CreateBeverages 
 CreateComments	/home/paul/work/websites/dryule.com/db/migrate/20110205112238_create_comments.rb	class CreateComments 
+CreateGuests	/home/paul/work/websites/dryule.com/db/migrate/20110409181748_create_guests.rb	class CreateGuests 
 CreatePosts	/home/paul/work/websites/dryule.com/db/migrate/20110219104701_create_posts.rb	class CreatePosts 
 CreateUsers	/home/paul/work/websites/dryule.com/db/migrate/20110125211359_create_users.rb	class CreateUsers 
 DryuleCom	/home/paul/work/websites/dryule.com/config/application.rb	module DryuleCom
 EasypgTest	/home/paul/work/websites/dryule.com/vendor/plugins/easypg/test/easypg_test.rb	class EasypgTest 
+Guest	/home/paul/work/websites/dryule.com/app/models/guest.rb	class Guest 
 J	/home/paul/work/websites/dryule.com/public/javascripts/jquery-1.4.2.min.js	function J(){return(new Date).getTime()}function Y(){return false}function Z(){return true}function na(a,b,d){d[0].type=a;return c.event.handle.apply(b,d)}function oa(a){var b,d=[],f=[],e=arguments,j,i,o,k,n,r;i=c.data(this,"events");if(!(a.liveFired===this||!i||!i.live||a.button&&a.type==="click")){a.liveFired=this;var u=i.live.slice(0);for(k=0;k<u.length;k++){i=u[k];i.origType.replace(O,"")===a.type?f.push(i.selector):u.splice(k--,1)}j=c(a.target).closest(f,a.currentTarget)
 K	/home/paul/work/websites/dryule.com/public/javascripts/jquery-1.4.2.min.js	function K(a,b){var d={};c.each(va.concat.apply([],va.slice(0,b)),function(){d[this]=a});return d}function wa(a){return"scrollTo"in a&&a.document?a:a.nodeType===9?a.defaultView||a.parentWindow:false}var c=function(a,b){return new c.fn.init(a,b)},Ra=A.jQuery,Sa=A.$,s=A.document,T,Ta=/^[^<]*(<[\w\W]+>)[^>]*$|^#([\w-]+)
 PokerControllerTest	/home/paul/work/websites/dryule.com/test/functional/poker_controller_test.rb	class PokerControllerTest 
@@ -81,6 +83,7 @@ down	/home/paul/work/websites/dryule.com/db/migrate/20110125220046_add_created_b
 down	/home/paul/work/websites/dryule.com/db/migrate/20110205112238_create_comments.rb	  def self.down
 down	/home/paul/work/websites/dryule.com/db/migrate/20110219104701_create_posts.rb	  def self.down
 down	/home/paul/work/websites/dryule.com/db/migrate/20110305130133_remove_integrated_blog.rb	  def self.down
+down	/home/paul/work/websites/dryule.com/db/migrate/20110409181748_create_guests.rb	  def self.down
 edit	/home/paul/work/websites/dryule.com/app/controllers/beverages_controller.rb	  def edit
 f	/home/paul/work/websites/dryule.com/public/javascripts/jquery-1.4.2.min.js	function f(j){return e.step(j)}this.startTime=J()
 f	/home/paul/work/websites/dryule.com/public/javascripts/jquery-1.4.2.min.js	function f(u){return c.nodeName(u,"table")?u.getElementsByTagName("tbody")
@@ -95,6 +98,7 @@ index	/home/paul/work/websites/dryule.com/app/controllers/blog_controller.rb	  d
 index	/home/paul/work/websites/dryule.com/app/controllers/sport_controller.rb	  def index
 index	/home/paul/work/websites/dryule.com/app/controllers/welcome_controller.rb	  def index
 index	/home/paul/work/websites/dryule.com/app/controllers/work_controller.rb	  def index
+initialize	/home/paul/work/websites/dryule.com/app/models/guest.rb		def initialize
 is_new?	/home/paul/work/websites/dryule.com/app/models/beverage.rb	  def is_new?
 k	/home/paul/work/websites/dryule.com/public/javascripts/jquery-1.4.2.min.js	function k()
 ma	/home/paul/work/websites/dryule.com/public/javascripts/jquery-1.4.2.min.js	function ma(){if(!c.isReady){try{s.documentElement.doScroll("left")}catch(a){setTimeout(ma,1);return}c.ready()}}function Qa(a,b){b.src?c.ajax({url:b.src,async:false,dataType:"script"}):c.globalEval(b.text||b.textContent||b.innerHTML||"");b.parentNode&&b.parentNode.removeChild(b)}function X(a,b,d,f,e,j){var i=a.length;if(typeof b==="object"){for(var o in b)X(a,o,b[o],f,e,d);return a}if(d!==w){f=!j&&f&&c.isFunction(d);for(o=0;o<i;o++)e(a[o],b,f?d.call(a[o],o,e(a[o],b)):d,j)
@@ -119,6 +123,7 @@ up	/home/paul/work/websites/dryule.com/db/migrate/20110125220046_add_created_by_
 up	/home/paul/work/websites/dryule.com/db/migrate/20110205112238_create_comments.rb	  def self.up
 up	/home/paul/work/websites/dryule.com/db/migrate/20110219104701_create_posts.rb	  def self.up
 up	/home/paul/work/websites/dryule.com/db/migrate/20110305130133_remove_integrated_blog.rb	  def self.up
+up	/home/paul/work/websites/dryule.com/db/migrate/20110409181748_create_guests.rb	  def self.up
 update	/home/paul/work/websites/dryule.com/app/controllers/beverages_controller.rb	  def update
 wa	/home/paul/work/websites/dryule.com/public/javascripts/jquery-1.4.2.min.js	function wa(a){return"scrollTo"in a&&a.document?a:a.nodeType===9?a.defaultView||a.parentWindow:false}var c=function(a,b){return new c.fn.init(a,b)},Ra=A.jQuery,Sa=A.$,s=A.document,T,Ta=/^[^<]*(<[\w\W]+>)[^>]*$|^#([\w-]+)
 win	/home/paul/work/websites/dryule.com/public/javascripts/game.js	function win()
