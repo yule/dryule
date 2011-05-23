@@ -7,7 +7,7 @@ html{
 
 
 body{  
-  background-color: #333333;
+  background: url('/images/bg.jpg');
   color: #424242;
 }
 
@@ -23,9 +23,9 @@ a, a:visited{
 
 #header{
   background-color: #FFFFFF;
-  background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(#333333));
-  background: -moz-linear-gradient(left,  #ffffff,  #333333);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#333333');
+  background: -webkit-gradient(linear, left top, right top, from(#ffffff), to(#000000));
+  background: -moz-linear-gradient(left,  #ffffff,  #000000);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endColorstr='#000000');
   color: #333333;
 }
 
@@ -95,10 +95,7 @@ a, a:visited{
 #content{
   width: 950px;
   float: left;
-  background-color: #ffffff;
-  background: -webkit-gradient(linear, left top, left bottom, from(#cccccc), to(#999999));
-  background: -moz-linear-gradient(top,  #cccccc,  #999999);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#CCCCCC', endColorstr='#999999');
+  background-color: #f3f3f3;
   padding-bottom: 50px;
 }
 
