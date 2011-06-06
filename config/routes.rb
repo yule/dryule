@@ -4,6 +4,7 @@ DryuleCom::Application.routes.draw do
 
   
 
+
   resources :posts
 
   resources :comments
@@ -19,6 +20,8 @@ DryuleCom::Application.routes.draw do
   match 'blog' => 'blog#index'
   match 'beer' => 'beer#index'
   match 'work' => 'work#index'
+  match 'photography' => 'photography#index'
+
   
   get 'work/mastermind'
   

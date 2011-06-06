@@ -1,14 +1,14 @@
 //Jquery returns colous in format rgb(nn,mm,pp):
-var colors = ['rgb(11, 100, 11)','rgb(190, 11, 11)','rgb(11, 20, 200)', 'rgb(200, 200, 20)', 'rgb(200, 176, 144)', 'rgb(0, 0, 0)', 'rgb(255, 255, 255)'];
+var colors = ['rgb(11, 100, 11)','rgb(190, 11, 11)',
+	      'rgb(11, 20, 200)', 'rgb(200, 200, 20)', 
+ 	      'rgb(200, 176, 144)', 'rgb(0, 0, 0)', 
+	      'rgb(255, 255, 255)', 'rgb(10,240,30)', 'rgb(55,55,55)'];
 
 var answer = [colors[1], colors[1], colors[2], colors[4]];
 
 var NUMBER_OF_GUESSES = 15;
-
 var guess_counter = 0;
-
 $(document).ready(function(){
-  
   $('#new-game-button').click(new_game);  
 
   new_game();  
@@ -26,7 +26,6 @@ $(document).ready(function(){
   //guess
   $('#go-button').click(function(){
     guess_counter++;
-    
     var one = $('#l-1').css('background-color');
     var two = $('#l-2').css('background-color');
     var three = $('#l-3').css('background-color');
@@ -76,10 +75,12 @@ function getRand(){
 
 function win(){
   alert('you win!');
+  $('#wins').html(parseInt($('#wins').html())+1);
 }
 
 function game_over(){
   alert('you lose');
+  $('#losses').html(parseInt($('#losses').html())+1);
 }
 
 function archive(guess, blackCounter, whiteCounter){

@@ -1,4 +1,4 @@
-1306178303
+1307391165
 AboutMeController	/home/paul/work/websites/dryule.com/app/controllers/about_me_controller.rb	class AboutMeController 
 AboutMeControllerTest	/home/paul/work/websites/dryule.com/test/functional/about_me_controller_test.rb	class AboutMeControllerTest 
 AboutMeHelper	/home/paul/work/websites/dryule.com/app/helpers/about_me_helper.rb	module AboutMeHelper
@@ -35,6 +35,8 @@ EasypgTest	/home/paul/work/websites/dryule.com/vendor/plugins/easypg/test/easypg
 Guest	/home/paul/work/websites/dryule.com/app/models/guest.rb	class Guest 
 J	/home/paul/work/websites/dryule.com/public/javascripts/jquery-1.4.2.min.js	function J(){return(new Date).getTime()}function Y(){return false}function Z(){return true}function na(a,b,d){d[0].type=a;return c.event.handle.apply(b,d)}function oa(a){var b,d=[],f=[],e=arguments,j,i,o,k,n,r;i=c.data(this,"events");if(!(a.liveFired===this||!i||!i.live||a.button&&a.type==="click")){a.liveFired=this;var u=i.live.slice(0);for(k=0;k<u.length;k++){i=u[k];i.origType.replace(O,"")===a.type?f.push(i.selector):u.splice(k--,1)}j=c(a.target).closest(f,a.currentTarget)
 K	/home/paul/work/websites/dryule.com/public/javascripts/jquery-1.4.2.min.js	function K(a,b){var d={};c.each(va.concat.apply([],va.slice(0,b)),function(){d[this]=a});return d}function wa(a){return"scrollTo"in a&&a.document?a:a.nodeType===9?a.defaultView||a.parentWindow:false}var c=function(a,b){return new c.fn.init(a,b)},Ra=A.jQuery,Sa=A.$,s=A.document,T,Ta=/^[^<]*(<[\w\W]+>)[^>]*$|^#([\w-]+)
+PhotographyController	/home/paul/work/websites/dryule.com/app/controllers/photography_controller.rb	class PhotographyController 
+PhotographyHelper	/home/paul/work/websites/dryule.com/app/helpers/photography_helper.rb	module PhotographyHelper
 PokerControllerTest	/home/paul/work/websites/dryule.com/test/functional/poker_controller_test.rb	class PokerControllerTest 
 PokerHelper	/home/paul/work/websites/dryule.com/app/helpers/poker_helper.rb	module PokerHelper
 PokerHelperTest	/home/paul/work/websites/dryule.com/test/unit/helpers/poker_helper_test.rb	class PokerHelperTest 
@@ -95,6 +97,7 @@ index	/home/paul/work/websites/dryule.com/app/controllers/about_me_controller.rb
 index	/home/paul/work/websites/dryule.com/app/controllers/beer_controller.rb	  def index
 index	/home/paul/work/websites/dryule.com/app/controllers/beverages_controller.rb	  def index
 index	/home/paul/work/websites/dryule.com/app/controllers/blog_controller.rb	  def index
+index	/home/paul/work/websites/dryule.com/app/controllers/photography_controller.rb	  def index
 index	/home/paul/work/websites/dryule.com/app/controllers/sport_controller.rb	  def index
 index	/home/paul/work/websites/dryule.com/app/controllers/welcome_controller.rb	  def index
 index	/home/paul/work/websites/dryule.com/app/controllers/work_controller.rb	  def index
