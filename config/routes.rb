@@ -2,16 +2,33 @@ DryuleCom::Application.routes.draw do
 
   
 
-  root :to => "welcome#index"
+  
+
+
+  resources :posts
+
+  resources :comments
+
+  resources :beverages, :user_sessions
+  
+  root :to => "about_me#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
   match 'about-me' => 'about_me#index'
-  match 'sport' => 'sport#index'
-  match 'poker' => 'poker#index'
+  match 'blog' => 'blog#index'
+  match 'beer' => 'beer#index'
   match 'work' => 'work#index'
+  match 'photography' => 'photography#index'
+
   
+  get 'work/mastermind'
+  
+  get 'work/scotruby'
+  
+  match "login" => "user_sessions#new", :as =>:login
+  match "logout" => "user_sessions#destroy", :as =>:logout
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action

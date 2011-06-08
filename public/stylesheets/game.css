@@ -1,0 +1,100 @@
+#board{
+  position: relative;
+  height: 500px;
+}
+
+#all-turn-holder{
+  position: absolute;
+  bottom: 0;
+  float: left;
+}
+
+.turn{
+  position: relative;
+  margin: 3px;
+  display: none;
+}
+
+.peg-holder{
+  width: 30px;
+  height: 30px;
+  background-color: #999999;
+  float: left;
+}
+
+.sm-circle-padder{
+  padding: 3px;
+  float: left;
+}
+
+.small-circle{
+  height: 7px;
+  width: 7px;
+  background-color: #ffffff;
+  float: left;
+  border-radius: 4px;  
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px; 
+}
+
+.guess-holder{
+  height: 30px;
+  width: 100px;
+  background-color: #999999;
+  float: left;
+}
+
+.med-circle-padder{
+  padding: 7px;
+  float: left;
+}
+
+.med-circle{
+  float: left;
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+  border-radius: 5px;  
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px; 
+}
+
+#guess{
+  float: left;
+  margin-left: 300px;
+  margin-right: 10px;
+  background-color: #999999;
+}
+
+.main-guess-holder{
+  width: 200px;
+}
+
+.large-circle-padder{
+  padding: 10px;
+  float: left;
+}
+
+.large-circle{
+  float: left;
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  border-radius: 15px;  
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px; 
+  cursor: pointer;
+}
+
+.spacer{
+  width: 5px;
+  height: 1px;
+  float: left;
+}
+#go-button, #new-game-button{
+  background-color: #999999;
+  padding: 15px;
+  float: left;
+  cursor: pointer;
+  color: #ffffff;
+}
