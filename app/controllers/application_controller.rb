@@ -4,7 +4,6 @@ class ApplicationController < ActionController::Base
   helper_method :current_user
 
 
-#authlogic magic!
 
 def current_user_session
   return @current_user_session if defined?(@current_user_session)
