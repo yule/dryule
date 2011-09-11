@@ -21,6 +21,7 @@ DryuleCom::Application.routes.draw do
   match 'beer' => 'beer#index'
   match 'work' => 'work#index'
   match 'photography' => 'photography#index'
+  match 'sport' => 'sport#index'
 
   
   get 'work/mastermind'
