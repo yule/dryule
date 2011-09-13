@@ -129,7 +129,14 @@ a, a:visited{
 .new{
   color: #770000;
 }
-  
+
+/* ------- Sports ------- */
+.right{
+  color: #00ca00;
+}
+.wrong{
+  color: #990000;
+}
 
 .comment-form{
   clear: left;
