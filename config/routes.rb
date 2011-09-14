@@ -5,6 +5,8 @@ DryuleCom::Application.routes.draw do
   
 
 
+  get "stuff/moonphase"
+
   resources :posts
 
   resources :comments
