@@ -29,6 +29,7 @@ DryuleCom::Application.routes.draw do
   get 'work/mastermind'
   
   get 'work/scotruby'
+  get 'sport/previous'
   
   match "login" => "user_sessions#new", :as =>:login
   match "logout" => "user_sessions#destroy", :as =>:logout
