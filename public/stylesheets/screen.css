@@ -131,11 +131,38 @@ a, a:visited{
 }
 
 /* ------- Sports ------- */
+
 .right{
   color: #00ca00;
 }
 .wrong{
   color: #990000;
+}
+
+.game{
+  margin-bottom: 50px;
+}
+.game .fixture{
+  float: left;
+  width: 12%;
+  background: #377611;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.handicap{
+  float: right;
+  margin-right: 10%;
+}
+.notes{
+  float: left;
+  width: 60%;
+  margin-left: 2%;
+}
+.pick, .result{
+  clear: left;
+  margin-left: 14%
 }
 
 .comment-form{
