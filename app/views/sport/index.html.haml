@@ -22,7 +22,7 @@
   .pick
     PICK: IND (+7.0)
   .result
-    -
+    /
 
 .game
   .fixture
@@ -38,7 +38,8 @@
   .pick
     PICK: CAR (+4.0)
   .result
-    -
+    /
+    
 .game
   .fixture
     .home-team
@@ -53,7 +54,8 @@
   .pick
     PICK: GB (-14.0)
   .result
-    -
+    /
+    
 .game
   .fixture
     .home-team
@@ -68,7 +70,7 @@
   .pick
     PICK: PIT (-12.0)
   .result
-    -
+    /
 
 .game
   .fixture
@@ -84,7 +86,7 @@
   .pick
     PICK: WAS (+2.0)
   .result
-    -
+    /
 
 .game
   .fixture
@@ -100,7 +102,7 @@
   .pick
     PICK: DET (-4.0)
   .result
-    -
+    /
 
 .game
   .fixture
@@ -116,7 +118,7 @@
   .pick
     PICK: BUF(+3.0)
   .result
-    -
+    /
 
 .game
   .fixture
@@ -132,7 +134,7 @@
   .pick
     PICK: HOU (+7.5)
   .result
-    -
+    /
 
 .game
   .fixture
@@ -148,7 +150,7 @@
   .pick
     PICK: OAK (-7.0)
   .result
-    -
+    /
 
 .game
   .fixture
@@ -164,7 +166,7 @@
   .pick
     PICK: DAL (+7.0)
   .result
-    -
+    /
 
 .game
   .fixture
@@ -180,7 +182,7 @@
   .pick
     PICK: TB (+4.5)
   .result
-    -
+    /
 
 .game
   .fixture
@@ -196,7 +198,7 @@
   .pick
     PICK: MIN (+3.0)
   .result
-    -
+    /
 
 .game
   .fixture
@@ -212,7 +214,7 @@
   .pick
     PICK: NYJ (-7.0) 
   .result
-    -
+    /
 
 %h3 My Bets
 
@@ -222,3 +224,31 @@
   %li Lucky 15 on GB (-14), BUF (+3.0), IND (+7), WAS (+2.0)
   %li TB to win at NO
   %li Double MIN (+3), NYJ (-7)
+  
+#all-results
+  %p Season record to date...
+  %ul 
+    %li 1:  7-8
+    %li 2:  9-7
+    %li 3:  11-5
+    %li 4:  7-9
+    %li 5:  10-3
+    %li 6:  
+    %li 7:  
+    %li 8:  
+    %li 9:  
+    %li 10: 
+    %li 11:  
+    %li 12:  
+    %li 13:  
+    %li 14:  
+    %li 15:  
+    %li 16:  
+    %li 17:  
+  #overall-result
+    %strong OVERALL: 44 - 32
+  #previous-results
+    =link_to 'Previous results...', :action=>'previous'
+  .clear
+    /
+

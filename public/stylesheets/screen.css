@@ -165,6 +165,40 @@ a, a:visited{
   margin-left: 14%
 }
 
+#all-results{
+  background: #377611;
+  color: #ffffff;
+  padding: 20px 5px;
+
+}
+
+#all-results p{
+  margin-left: 10px;
+}
+
+#all-results ul {
+}
+#all-results ul li{
+  list-style: none;
+  border: 1px solid #ffffff;
+  float: left;
+  padding: 10px;
+}
+#overall-result{
+  border: 1px solid #ffffff;
+  margin: 10px 40px;
+  float: left;
+  padding: 10px;
+  clear: both;
+}
+#previous-results{
+  float: right;
+  padding: 10px;
+  clear: both;
+}
+#previous-results a, #previous-results a:visited{
+  color: #ffffff;
+}
 .comment-form{
   clear: left;
   width: 100%;
