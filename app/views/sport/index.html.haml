@@ -3,7 +3,7 @@
 
 %h3 
   Week 
-  = @games.first.week
+  = @games.first.week unless @games.empty?
 
 
 - for game in @games
