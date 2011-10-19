@@ -18,7 +18,8 @@ class Game < ActiveRecord::Base
     winner == pick
   end
   
-  def pick_handicap 
+  def pick_handicap
+    return 'None yet' if pick.empty? 
     pick == 'home' ? "#{home} (#{(handicap).to_hcap})" : "#{away} (#{(handicap*-1).to_hcap})"
   end
 
