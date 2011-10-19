@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Notes:</b>
+  <%= @bet.notes %>
+</p>
+
+<p>
+  <b>Is correct:</b>
+  <%= @bet.is_correct %>
+</p>
+
+
+<%= link_to 'Edit', edit_bet_path(@bet) %> |
+<%= link_to 'Back', bets_path %>

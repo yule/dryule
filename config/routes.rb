@@ -5,6 +5,10 @@ DryuleCom::Application.routes.draw do
   
 
 
+  resources :bets
+
+  resources :games
+
   get "stuff/moonphase"
 
   resources :posts
