@@ -24,7 +24,7 @@
     <%= f.select :home, Game::TEAMS %>
     
     <%= f.label :handicap %>
-    <%= f.text_field :handicap, :type=>'number' %>
+    <%= f.text_field :handicap, :type=>'number', :step => 0.5 %>
   </div>
   <div class="field">
     <%= f.label :pick %>

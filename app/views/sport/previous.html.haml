@@ -1,6 +1,29 @@
 %h2 
   %em previously...
 
+- @games = Game.find_all_by_week("7")
+%h3 
+  Week 
+  = @games.first.week unless @games.empty?
+
+
+- for game in @games
+  .game{:class=> game.correct? ? 'right' : game.home_result ? 'wrong' : 'pending'}
+    .fixture
+      .home-team
+        =game.away
+      @
+      .away-team
+        =game.home
+        .handicap
+          ="(#{game.handicap.to_hcap})"
+    .notes
+      =game.notes
+    .pick
+      PICK: 
+      =game.pick_handicap
+
+
 
 %h3 Week 6
 
