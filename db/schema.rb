@@ -12,12 +12,6 @@
 
 ActiveRecord::Schema.define(:version => 20111019223937) do
 
-  create_table "author_comments", :force => true do |t|
-    t.string  "author_name"
-    t.string  "comment"
-    t.integer "brand"
-  end
-
   create_table "bets", :force => true do |t|
     t.string   "notes"
     t.boolean  "is_correct"

@@ -12,7 +12,6 @@ gem 'authlogic'
 # gem 'unicorn'
 gem 'pg'
 gem 'template'
-gem 'mongrel'
 # Deploy with Capistrano
 # gem 'capistrano'
 gem 'simple-rss'
